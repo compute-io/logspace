@@ -54,7 +54,7 @@ out = logspace( 0, 3, 100 );
 console.log( out.join( '\n' ) );
 
 // Create an array with decremented values:
-out = logspace( 3, 0, 101 );
+out = logspace( 3, 0, 10 );
 console.log( out.join( '\n' ) );
 ```
 
