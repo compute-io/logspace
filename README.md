@@ -19,18 +19,43 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var foo = require( 'compute-logspace' );
+var logspace = require( 'compute-logspace' );
 ```
 
-#### foo( arr )
+#### logspace( a, b[, length] )
 
-What does this function do?
+Generates a logarithmically spaced numeric `array` between `10^a` and `10^b`. If a `length` is not provided, the default output `array` length is `10`.
+
+``` javascript
+var arr = logspace( 0, 2, 6 );
+// returns [ 1, ~2.5, ~6.31, ~15.85, ~39.81, 100 ]
+```
+
+
+## Notes
+
+The output `array` includes the values `10^a` and `10^b`. __Beware__ of floating point errors, including for the first and last `array` elements.
+
+This function is inspired by MATLAB's [logspace](http://www.mathworks.com/help/matlab/ref/logspace.html) and NumPy's [logspace](http://docs.scipy.org/doc/numpy/reference/generated/numpy.logspace.html).
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-logspace' );
+var logspace = require( 'compute-logspace' ),
+	out;
+
+// Default behavior:
+out = logspace( 0, 3 );
+console.log( out.join( '\n' ) );
+
+// Specify length:
+out = logspace( 0, 3, 10 );
+console.log( out.join( '\n' ) );
+
+// Create an array with decremented values:
+out = logspace( 3, 0, 11 );
+console.log( out.join( '\n' ) );
 ```
 
 To run the example code from the top-level application directory,

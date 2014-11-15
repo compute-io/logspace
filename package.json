@@ -25,12 +25,22 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "mathematics",
+    "math",
+    "log",
+    "logarithmic",
+    "array",
+    "matlab",
+    "utilities",
+    "utils"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/logspace/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-integer": "^1.0.1"
+  },
   "devDependencies": {
     "chai": "1.x.x",
     "mocha": "1.x.x",
