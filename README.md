@@ -50,11 +50,11 @@ out = logspace( 0, 3 );
 console.log( out.join( '\n' ) );
 
 // Specify length:
-out = logspace( 0, 3, 10 );
+out = logspace( 0, 3, 100 );
 console.log( out.join( '\n' ) );
 
 // Create an array with decremented values:
-out = logspace( 3, 0, 11 );
+out = logspace( 3, 0, 101 );
 console.log( out.join( '\n' ) );
 ```
 
