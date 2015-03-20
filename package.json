@@ -43,7 +43,8 @@
     "url": "https://github.com/compute-io/logspace/issues"
   },
   "dependencies": {
-    "validate.io-integer": "^1.0.1"
+    "validate.io-nonnegative-integer": "^1.0.0",
+    "validate.io-number-primitive": "^1.0.0"
   },
   "devDependencies": {
     "chai": "2.x.x",
