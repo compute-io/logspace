@@ -10,6 +10,10 @@
     {
       "name": "Athan Reines",
       "email": "kgryte@gmail.com"
+    },
+    {
+      "name": "Philipp Burckhardt",
+      "email": "pburckhardt@outlook.com"
     }
   ],
   "scripts": {
@@ -39,18 +43,16 @@
     "url": "https://github.com/compute-io/logspace/issues"
   },
   "dependencies": {
-    "validate.io-integer": "^1.0.1"
+    "validate.io-nonnegative-integer": "^1.0.0",
+    "validate.io-number-primitive": "^1.0.0"
   },
   "devDependencies": {
-    "chai": "1.x.x",
-    "mocha": "1.x.x",
+    "chai": "2.x.x",
     "coveralls": "^2.11.1",
-    "istanbul": "^0.3.0"
+    "istanbul": "^0.3.0",
+    "jshint": "^2.6.3",
+    "jshint-stylish": "^1.0.1",
+    "mocha": "2.x.x"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
-    }
-  ]
+  "license": "MIT"
 }
